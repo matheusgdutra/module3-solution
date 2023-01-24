@@ -9,37 +9,39 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" type='text/css'>
   </head>
 <body>
   <header>
     <nav id="header-nav" class="navbar navbar-expand-md">
-      <div class="container-fluid">
-        <div class="navbar-brand">
-          <a href="#">
-            <img src="./images/restaurant-logo_large.png" width="150" height="150" class="d-inline-block align-top  d-none d-md-inline-block" alt="Logo image">
-            <div>
-              <h1>David Chu's China Bistro</h1>
-              <p>
-                <img src="./images/star-k-logo.png" alt="Kosher certification">
-                <span class="navbar-text">Kosher Certified</span>
-              </p>
-              <p></p>
-            </div>
-          </a>
+      <div class="container">
+        <div class="navbar-header d-flex flex-row">
+          <a href="index.html"><div id="logo-img" alt="Logo image"></div></a>
+          <div class="navbar-brand">
+            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
+            <p>
+              <img src="./images/star-k-logo.png" alt="Kosher certification">
+              <span class="navbar-text">Kosher Certified</span>
+            </p>
+          </div>
         </div>
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="collapsable-nav">
+          <ul class="navbar-nav" id="nav-list">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#"><span class="material-icons">restaurant_menu</span><br class="d-none d-md-inline"> Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#"><span class="material-icons">info</span><br class="d-none d-md-inline"> About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#"><span class="material-icons">emoji_events</span><br class="d-none d-md-inline"> Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tel:410-602-5008"><span class="material-icons">call</span><br class="d-none d-md-inline"> 410-602-5008</a>
             </li>
           </ul>
         </div>
